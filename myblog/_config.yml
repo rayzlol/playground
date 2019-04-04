@@ -1,0 +1,77 @@
+title: programming exercise
+author: zeng rui
+email: rayz0_0@163.com
+description: >- # this means to ignore newlines until "baseurl:" 
+   浙江大学编程能力测试(PAT)C语言题解说明
+baseurl: "/PAT" # the subpath of your site, e.g. /blog
+url: "http://oliverlew.github.io/PAT/" # the base hostname & protocol for your site, e.g. http://example.com
+github_repo: "http://www.github.com/oliverlew/PAT"
+github_username:  oliverlew
+rss: rss
+
+plugins:
+  - jekyll-feed
+
+# Build settings
+github: [metadata]
+encoding: UTF-8
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+future: true
+show_excerpts: false
+
+theme: minima
+
+header_pages:
+  - categories/Basic.md
+  - categories/Advanced.md
+  - categories/Top.md
+  - tags.html
+  - about.md
+
+exclude: 
+  - PATAdvanced/
+  - PATBasic/
+  - Gemfile
+  - Gemfile.lock
+  - source
+  - README.md
+  - _articles/html
+  - _articles/analysis
+
+# collections
+collections:
+  articles:
+    output: true
+
+# Google Analytics
+google_analytics: UA-118900116-1
+
+# Gitalk
+gitalk:
+  # NOTE: id configuration is in _includes/gitalk.html
+  enabled: true
+  clientID: '7bf7cca48411ad47d5c3'
+  clientSecret: '9b1d5d7c3aa64fe4f5e4c8e71ea597e63f6e83b9'
+  # create issues in my github.io repo
+  repo: 'oliverlew.github.io'
+  owner: 'OliverLew'
+  admin: 'OliverLew'
+  labels: ['Gitalk', 'PAT solutions in C']
+  pagerDirection: 'first'
+  distractionFreeMode: false
+  createIssueManually: false
+
+# vim:tabstop=2:softtabstop=2:shiftwidth=2
