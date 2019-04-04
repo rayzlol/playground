@@ -1,0 +1,1 @@
+#技术基础#工具jekyll工具可以模拟github pages环境，工作原理是这样在jekll上生成文件即可我dwa #网页设计#遇到的问题jekyll安装 根据英文版guide，MAC系统要注意xcode的版本要最新
